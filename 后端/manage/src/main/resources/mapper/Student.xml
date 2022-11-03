@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.manage.mapper.StudentMapper">
+    <!--动态SQL-->
+    <update id="update">
+        UPDATE student
+        <set>
+            <if test="stuId != null">
+                stuId = #{stuId},
+            </if>
+            <if test="stuName != null">
+                stuName = #{stuName},
+            </if>
+            <if test="stuSex != null">
+                stuSex = #{stuSex},
+            </if>
+            <if test="stuNational != null">
+                stuNational = #{stuNational},
+            </if>
+            <if test="sfId != null">
+                sfId = #{sfId},
+            </if>
+            <if test="stuDate != null">
+                stuDate = #{stuDate},
+            </if>
+            <if test="stuPhone != null">
+                stuPhone = #{stuPhone},
+            </if>
+            <if test="stuAddress != null">
+                stuAddress = #{stuAddress},
+            </if>
+            <if test="stuSecondarySchool != null">
+                stuSecondarySchool = #{stuSecondarySchool},
+            </if>
+            <if test="stuClass != null">
+                stuClass = #{stuClass}
+            </if>
+        </set>
+        <where>
+            stuId = #{stuId}
+        </where>
+    </update>
+</mapper>

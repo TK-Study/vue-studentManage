@@ -1,0 +1,2 @@
+INSERT INTO `file`(`id`, `name`, `type`, `size`, `url`, `md5`, `is_delete`, `enable`) VALUES (6, 'bg.png', 'png', 580, 'http://localhost:9090/file/9e28a6be6e594ee7898333780fb2f0c3.png', 'bb5490b7526e15bee229d27e13523054', 0, 1);
+INSERT INTO `file`(`id`, `name`, `type`, `size`, `url`, `md5`, `is_delete`, `enable`) VALUES (7, 'bg.png', 'png', 580, 'http://localhost:9090/file/9e28a6be6e594ee7898333780fb2f0c3.png', 'bb5490b7526e15bee229d27e13523054', 0, 1);
